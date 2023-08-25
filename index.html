@@ -1,169 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <title>if barber</title>
-</head>
-<body>
- <!-- HEADER -->
- <div class="bg-home">
-    <header>
-
+    <title>Dev Ítalo Barber</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="bg-home">
+      <header>
         <nav class="header-content container">
-            <div class="header-icons">
-                <a href="#">
-                    <i class="fa-brands fa-instagram fa-2x"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-facebook fa-2x"></i>
-                </a>
-                <a href="#">
-                    <i class="fa-brands fa-tiktok fa-2x"></i>
-                </a>
-            </div>
+          <div class="header-icons" data-aos="fade-down">
+            <a href="#">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+          </div>
 
-            <div class="header-logo">
-                <img src="assets/logo.svg" 
-                alt="Barber Logo" />
-            </div>
+          <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+            <img
+              data-aos-delay="300"
+              data-aos-duration="1500"
+              src="assets/logo.svg"
+              alt="Logo BARBER"
+            />
+          </div>
 
-            <div>
-                <a class="header-button" href="#">
-                Book Now </a>
-            </div>
-
+          <div data-aos="fade-down">
+            <a class="header-button" href="#"> BOOK NOW </a>
+          </div>
         </nav>
 
-        <main class=" hero container">
-            <h1> STYLE IS THE REFLEX OF YOUR ATTITUDE AND PERSONALITY</h1>
-            <p> Working Hours: 09:00 - 19:00</p>
-            <a href="#" class="button-contact" target="_blank">
-                BOOK NOW
-            </a>
+        <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+          <h1>STYLE IS THE REFLEX OF YOUR ATTITUDE & PERSONALITY.</h1>
+          <p>OPENING HOURS: 09:00 - 19:00</p>
+          <a
+            href="https://api.whatsapp.com/send?phone=554799452210&text=Make%20your%20appointment"
+            class="button-contact"
+            target="_blank"
+          >
+            BOOK NOW
+          </a>
         </main>
-    </header>
- </div>
+      </header>
+    </div>
 
- <!-- ABOUT -->
+    <!-- ABOUT -->
     <section class="about">
-        <div class="container about-content">
-            <div>
-                <img 
-                src="/assets/images.svg" 
-                alt="Image about the barber shop"
-                />
-            </div>
-
-            <div class="about-description">
-                <h2> About Us</h2>
-                <p> Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</p>
-                <p> Working Hours <strong>09:00 - 19:00</strong></p>
-            </div>
+      <div class="container about-content">
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <img src="assets/images.svg" alt="About Us picture" />
         </div>
+
+        <div
+          class="about-description"
+          data-aos="zoom-out-left"
+          data-aos-delay="250"
+        >
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque
+            proin risus. Orci proin morbi vestibulum convallis leo vestibulum
+            mus. Non duis augue eros mattis a quis sem sodales.
+          </p>
+          <p>
+            OPENING HOURS: <strong>09:00</strong> -
+            <strong>19:00</strong>
+          </p>
+        </div>
+      </div>
     </section>
 
- <!-- SERVICES -->
+    <!-- SERVICES -->
 
- <section class="services">
-    <div class="services-content container">
-        <h2> Services</h2>
-        <p> Lorem ipsum dolor sit amet consectetur. Ornare eget pellentesque proin risus. Orci proin morbi vestibulum convallis leo vestibulum mus. Non duis augue eros mattis a quis sem sodales.</p>
-    </div>
-  <section class="haircuts">
+    <section class="services">
+      <div class="services-content container">
+        <h2>Services</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nihil
+          officiis sed magni in reiciendis cupiditate tenetur cumque voluptatum
+          quibusdam, consectetur impedit quaerat dicta iusto velit atque enim
+          culpa dolore.
+        </p>
+      </div>
 
-    <div class="haircut">
-        <img 
-        src="assets/corte1.png" 
-        alt="Normal cut"
-        />
-        <div class="haircut-info">
-            <strong> Normal Haircut</strong>
-            <button>
-                NOK 200
-            </button>
+      <section class="haircuts">
+        <div class="haircut" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/corte1.png" alt="Haircut" />
+          <div class="haircut-info">
+            <strong>Haircut</strong>
+            <button>200 NOK</button>
+          </div>
         </div>
-    </div>
 
-    <div class="haircut">
-        <img 
-        src="assets/corte2.png" 
-        alt="Beard"
-        />
-        <div class="haircut-info">
+        <div class="haircut" data-aos="fade-up" data-aos-delay="300">
+          <img src="assets/corte2.png" alt="Beard" />
+          <div class="haircut-info">
             <strong>Beard</strong>
-            <button>
-                NOK 100
-            </button>
+            <button>100 NOK</button>
+          </div>
         </div>
-    </div>
 
-    <div class="haircut">
-        <img 
-        src="assets/corte3.png" 
-        alt="COMBO"
-        />
-        <div class="haircut-info">
-            <strong> Hair & Beard</strong>
-            <button>
-                NOK 250
-            </button>
+        <div class="haircut" data-aos="fade-up" data-aos-delay="400">
+          <img src="assets/corte3.png" alt="Hair & Beard" />
+          <div class="haircut-info">
+            <strong>Hair & Beard</strong>
+            <button>250 NOK</button>
+          </div>
         </div>
+      </section>
+    </section>
+
+    <!-- FOOTER -->
+
+    <div class="services">
+      <h2>Contact Us</h2>
     </div>
 
-  </section>
- </section>
+    <iframe
+      width="100%"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2056.792278786652!2d5.733853977433123!3d58.96843243985611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3537b44f06d5%3A0x9850d176247c9502!2sVerksgata%2054%2C%204013%20Stavanger!5e0!3m2!1spt-BR!2sno!4v1692924128178!5m2!1spt-BR!2sno"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
 
- <!-- FOOTER -->
- <div class="services">
-    <h2> VISIT US</h2>
- </div>
-
- <iframe
- width="100%"
- src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8226.315465180714!2d5.740774799999989!3d58.97200895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3535ddb0ef0f%3A0xa1e547ad9160937!2sStavanger%20Sentrum%2C%20Stavanger!5e0!3m2!1spt-BR!2sno!4v1692881275335!5m2!1spt-BR!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
- <footer class="footer">
-    <div class="footer-icons">
+    <footer class="footer">
+      <div class="footer-icons">
         <a href="#">
-            <i class="fa-brands fa-instagram fa-2x"></i>
+          <i class="fa-brands fa-instagram fa-2x"></i>
         </a>
         <a href="#">
-            <i class="fa-brands fa-facebook fa-2x"></i>
+          <i class="fa-brands fa-facebook fa-2x"></i>
         </a>
         <a href="#">
-            <i class="fa-brands fa-tiktok fa-2x"></i>
+          <i class="fa-brands fa-tiktok fa-2x"></i>
         </a>
-    </div>
+      </div>
 
-    <div>
-      <img 
-        src="assets/logo.svg" 
-        alt="barber logo"
-      />  
-    </div>
+      <div>
+        <img src="assets/logo.svg" alt="Barber logo" />
+      </div>
 
-    <p> Copyright 2023 - Dev Ítalo - All rights reserved.</p>
+      <p>Copyright 2023 | Dev Ítalo - All rights reserved.</p>
+    </footer>
 
- </footer>
+    <!-- Button Whatsapp -->
 
- <!-- BUTTON WHATSAPP CONTACT-->
+    <a
+      href="https://api.whatsapp.com/send?phone=554799452210&text=Make%20your%20appointment"
+      class="btn-whatsapp"
+      target="_blank"
+      data-aos="zoom-in-up"
+      data-aos-delay="400"
+    >
+      <img src="assets/whatssapp.svg" alt="whatsapp button" />
+      <span class="tooltip-text">Book Your Haircut</span>
+    </a>
 
- <a
-  href="#"
-  class="btn-whatsapp"
-    target="_blank"
-  > 
-  <img src="assets/whatssapp.svg" alt=" Whatsapp Button" />
-  <span class="tooltip-text"> Book Your Haircut</span>
- </a>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
