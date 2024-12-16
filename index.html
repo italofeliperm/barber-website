@@ -136,34 +136,129 @@
       </section>
     </section>
 
+    <!-- BOOKING -->
+    <section class="booking">
+      <div class="services-content container">
+        <h2>Book Your Visit</h2>
+        <p>Choose your preferred date and time</p>
+      </div>
+
+      <div
+        class="booking-content container"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="booking-info">
+          <div class="service-options">
+            <h3>Our Services</h3>
+            <div class="service-item">
+              <label>
+                <input type="radio" name="service" value="haircut" />
+                <div class="service-label">
+                  <span>Haircut</span>
+                  <span class="price">200 NOK</span>
+                </div>
+              </label>
+            </div>
+            <div class="service-item">
+              <label>
+                <input type="radio" name="service" value="beard" />
+                <div class="service-label">
+                  <span>Beard</span>
+                  <span class="price">100 NOK</span>
+                </div>
+              </label>
+            </div>
+            <div class="service-item">
+              <label>
+                <input type="radio" name="service" value="both" />
+                <div class="service-label">
+                  <span>Hair & Beard</span>
+                  <span class="price">250 NOK</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="booking-calendar">
+            <h3>Select Date</h3>
+            <div class="date-input-wrapper">
+              <input
+                type="date"
+                id="booking-date"
+                class="date-select"
+                placeholder="Select a date"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="booking-hours">
+            <h3>Available Time Slots</h3>
+            <div class="time-slots">
+              <!-- Time slots will be populated by JavaScript -->
+            </div>
+          </div>
+
+          <button id="bookingButton" disabled>Book Appointment</button>
+        </div>
+      </div>
+    </section>
+
     <!-- FOOTER -->
 
-    <div class="services">
-      <h2>Visit Us</h2>
-      <p>Stavanger, 4020</p>
-    </div>
+    <section class="visit-us">
+      <div
+        class="container visit-content"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div class="visit-info">
+          <h2>Visit Us</h2>
+          <div class="address-details">
+            <div class="address-item">
+              <i class="fas fa-location-dot"></i>
+              <p>Verksgata 54, 4013 Stavanger</p>
+            </div>
+            <div class="address-item">
+              <i class="fas fa-clock"></i>
+              <p>Opening Hours: 09:00 - 19:00</p>
+            </div>
+          </div>
+        </div>
 
-    <iframe
-      width="100%"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2056.792278786652!2d5.733853977433123!3d58.96843243985611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3537b44f06d5%3A0x9850d176247c9502!2sVerksgata%2054%2C%204013%20Stavanger!5e0!3m2!1spt-BR!2sno!4v1692924128178!5m2!1spt-BR!2sno"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+        <div class="map-container" data-aos="fade-up" data-aos-delay="400">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2056.792278786652!2d5.733853977433123!3d58.96843243985611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3537b44f06d5%3A0x9850d176247c9502!2sVerksgata%2054%2C%204013%20Stavanger!5e0!3m2!1spt-BR!2sno!4v1692924128178!5m2!1spt-BR!2sno"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <a
+            href="https://maps.google.com"
+            target="_blank"
+            class="directions-button"
+          >
+            <i class="fas fa-directions"></i>
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <div class="footer-icons">
         <a href="#">
-          <i class="fa-brands fa-instagram fa-2x"></i>
+          <i class="fa-brands fa-instagram"></i>
         </a>
         <a href="#">
-          <i class="fa-brands fa-facebook fa-2x"></i>
+          <i class="fa-brands fa-facebook"></i>
         </a>
         <a href="#">
-          <i class="fa-brands fa-tiktok fa-2x"></i>
+          <i class="fa-brands fa-tiktok"></i>
         </a>
       </div>
 
@@ -173,19 +268,6 @@
 
       <p>Copyright 2023 | Dev Ítalo - All rights reserved.</p>
     </footer>
-
-    <!-- Button Whatsapp -->
-
-    <a
-      href="https://api.whatsapp.com/send?phone=554799452210&text=Make%20your%20appointment"
-      class="btn-whatsapp"
-      target="_blank"
-      data-aos="zoom-in-up"
-      data-aos-delay="400"
-    >
-      <img src="assets/whatssapp.svg" alt="whatsapp button" />
-      <span class="tooltip-text">Book Your Haircut</span>
-    </a>
 
     <script src="script.js"></script>
   </body>
